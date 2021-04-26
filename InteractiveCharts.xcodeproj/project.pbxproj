@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		95075B3F26370E81005E0066 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95075B3E26370E81005E0066 /* LineView.swift */; };
+		95075B4326370EAA005E0066 /* LinePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95075B4226370EAA005E0066 /* LinePath.swift */; };
+		95075B472637153E005E0066 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95075B462637153E005E0066 /* ChartView.swift */; };
+		95075B4B263718C7005E0066 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95075B4A263718C7005E0066 /* IndicatorPoint.swift */; };
+		95075B4F2637227D005E0066 /* ChartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95075B4E2637227D005E0066 /* ChartLabel.swift */; };
 		955788432636B8D800D1192D /* InteractiveCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955788392636B8D800D1192D /* InteractiveCharts.framework */; };
 		955788482636B8D800D1192D /* InteractiveChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955788472636B8D800D1192D /* InteractiveChartsTests.swift */; };
 		9557884A2636B8D800D1192D /* InteractiveCharts.h in Headers */ = {isa = PBXBuildFile; fileRef = 9557883C2636B8D800D1192D /* InteractiveCharts.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		95075B3E26370E81005E0066 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
+		95075B4226370EAA005E0066 /* LinePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePath.swift; sourceTree = "<group>"; };
+		95075B462637153E005E0066 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		95075B4A263718C7005E0066 /* IndicatorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
+		95075B4E2637227D005E0066 /* ChartLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLabel.swift; sourceTree = "<group>"; };
 		955788392636B8D800D1192D /* InteractiveCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InteractiveCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9557883C2636B8D800D1192D /* InteractiveCharts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveCharts.h; sourceTree = "<group>"; };
 		9557883D2636B8D800D1192D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +60,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		95075B5426372506005E0066 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				95075B462637153E005E0066 /* ChartView.swift */,
+				95075B552637251A005E0066 /* Helpers */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		95075B552637251A005E0066 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				95075B3E26370E81005E0066 /* LineView.swift */,
+				95075B4226370EAA005E0066 /* LinePath.swift */,
+				95075B4A263718C7005E0066 /* IndicatorPoint.swift */,
+				95075B4E2637227D005E0066 /* ChartLabel.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		9557882F2636B8D700D1192D = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +103,7 @@
 			children = (
 				9557883C2636B8D800D1192D /* InteractiveCharts.h */,
 				9557883D2636B8D800D1192D /* Info.plist */,
+				95075B5426372506005E0066 /* LineChart */,
 			);
 			path = InteractiveCharts;
 			sourceTree = "<group>";
@@ -147,6 +178,7 @@
 				TargetAttributes = {
 					955788382636B8D800D1192D = {
 						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
 					};
 					955788412636B8D800D1192D = {
 						CreatedOnToolsVersion = 12.4;
@@ -194,6 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95075B4326370EAA005E0066 /* LinePath.swift in Sources */,
+				95075B3F26370E81005E0066 /* LineView.swift in Sources */,
+				95075B4B263718C7005E0066 /* IndicatorPoint.swift in Sources */,
+				95075B4F2637227D005E0066 /* ChartLabel.swift in Sources */,
+				95075B472637153E005E0066 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +378,7 @@
 		9557884E2636B8D800D1192D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MTX83R5H8X;
@@ -358,6 +396,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -366,6 +405,7 @@
 		9557884F2636B8D800D1192D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = MTX83R5H8X;
@@ -391,6 +431,7 @@
 		955788512636B8D800D1192D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTX83R5H8X;
 				INFOPLIST_FILE = InteractiveChartsTests/Info.plist;
@@ -409,6 +450,7 @@
 		955788522636B8D800D1192D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTX83R5H8X;
 				INFOPLIST_FILE = InteractiveChartsTests/Info.plist;
