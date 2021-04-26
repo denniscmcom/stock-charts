@@ -26,9 +26,9 @@ struct ChartLabel: View {
                     Text(hour)
                 }
                 Text("\(data[indexPosition], specifier: "%.2f")")
-//                    .foregroundColor(colour)
+                    .foregroundColor(Color(.systemBlue))
             }
-            .font(.subheadline)
+            .font(.headline)
         }
     }
     
@@ -46,11 +46,5 @@ struct ChartLabel: View {
         let finalDate = dateFormatter.string(from: date!)
         
         return finalDate
-    }
-}
-
-struct Label_Previews: PreviewProvider {
-    static var previews: some View {
-        ChartLabel(data: [10.0, 11.1, 10.5, 10.0, 11.9, 11.7, 10.4, 10.9], indexPosition: .constant(0))
     }
 }

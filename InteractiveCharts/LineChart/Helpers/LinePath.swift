@@ -10,6 +10,7 @@ import SwiftUI
 struct LinePath: Shape {
     var data: [Double]
     var (width, height): (CGFloat, CGFloat)
+    @Binding var pathPoints: [CGPoint]
     
     func path(in rect: CGRect) -> Path {
         var path = Path()
@@ -18,8 +19,6 @@ struct LinePath: Shape {
         let widthBetweenDataPoints = Double(width) / Double(normalizedData.count - 1)  // Remove first point
         let initialPoint = normalizedData[0] * Double(height)
         var x: Double = 0
-        
-        var pathPoints = [CGPoint]()
         
         path.move(to: CGPoint(x: x, y: initialPoint))
         for y in normalizedData {

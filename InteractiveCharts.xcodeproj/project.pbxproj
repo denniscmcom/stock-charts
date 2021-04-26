@@ -12,6 +12,9 @@
 		95075B472637153E005E0066 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95075B462637153E005E0066 /* ChartView.swift */; };
 		95075B4B263718C7005E0066 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95075B4A263718C7005E0066 /* IndicatorPoint.swift */; };
 		95075B4F2637227D005E0066 /* ChartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95075B4E2637227D005E0066 /* ChartLabel.swift */; };
+		951D9BE026375E10006B6A6D /* ChartViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D9BDF26375E10006B6A6D /* ChartViewPreview.swift */; };
+		951D9BE526375E74006B6A6D /* GenerateSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D9BE426375E74006B6A6D /* GenerateSampleData.swift */; };
+		951D9BE926376131006B6A6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D9BE826376131006B6A6D /* ContentView.swift */; };
 		955788432636B8D800D1192D /* InteractiveCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955788392636B8D800D1192D /* InteractiveCharts.framework */; };
 		955788482636B8D800D1192D /* InteractiveChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955788472636B8D800D1192D /* InteractiveChartsTests.swift */; };
 		9557884A2636B8D800D1192D /* InteractiveCharts.h in Headers */ = {isa = PBXBuildFile; fileRef = 9557883C2636B8D800D1192D /* InteractiveCharts.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +36,9 @@
 		95075B462637153E005E0066 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		95075B4A263718C7005E0066 /* IndicatorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
 		95075B4E2637227D005E0066 /* ChartLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLabel.swift; sourceTree = "<group>"; };
+		951D9BDF26375E10006B6A6D /* ChartViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewPreview.swift; sourceTree = "<group>"; };
+		951D9BE426375E74006B6A6D /* GenerateSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleData.swift; sourceTree = "<group>"; };
+		951D9BE826376131006B6A6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		955788392636B8D800D1192D /* InteractiveCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InteractiveCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9557883C2636B8D800D1192D /* InteractiveCharts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveCharts.h; sourceTree = "<group>"; };
 		9557883D2636B8D800D1192D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -80,6 +86,24 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		951D9BDE26375DDA006B6A6D /* UI Previews */ = {
+			isa = PBXGroup;
+			children = (
+				951D9BE826376131006B6A6D /* ContentView.swift */,
+				951D9BDF26375E10006B6A6D /* ChartViewPreview.swift */,
+				951D9BE326375E44006B6A6D /* Sample data */,
+			);
+			path = "UI Previews";
+			sourceTree = "<group>";
+		};
+		951D9BE326375E44006B6A6D /* Sample data */ = {
+			isa = PBXGroup;
+			children = (
+				951D9BE426375E74006B6A6D /* GenerateSampleData.swift */,
+			);
+			path = "Sample data";
+			sourceTree = "<group>";
+		};
 		9557882F2636B8D700D1192D = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +128,7 @@
 				9557883C2636B8D800D1192D /* InteractiveCharts.h */,
 				9557883D2636B8D800D1192D /* Info.plist */,
 				95075B5426372506005E0066 /* LineChart */,
+				951D9BDE26375DDA006B6A6D /* UI Previews */,
 			);
 			path = InteractiveCharts;
 			sourceTree = "<group>";
@@ -227,7 +252,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				95075B4326370EAA005E0066 /* LinePath.swift in Sources */,
+				951D9BE526375E74006B6A6D /* GenerateSampleData.swift in Sources */,
+				951D9BE926376131006B6A6D /* ContentView.swift in Sources */,
 				95075B3F26370E81005E0066 /* LineView.swift in Sources */,
+				951D9BE026375E10006B6A6D /* ChartViewPreview.swift in Sources */,
 				95075B4B263718C7005E0066 /* IndicatorPoint.swift in Sources */,
 				95075B4F2637227D005E0066 /* ChartLabel.swift in Sources */,
 				95075B472637153E005E0066 /* ChartView.swift in Sources */,
