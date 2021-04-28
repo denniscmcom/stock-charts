@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LineView: View {
+public struct LineView: View {
     var data: [Double]
     var dates: [String]?
     var hours: [String]?
@@ -17,7 +17,7 @@ struct LineView: View {
     @State private var IndicatorPointPosition: CGPoint = .zero
     @State private var pathPoints = [CGPoint]()
     
-    var body: some View {
+    public var body: some View {
         ZStack {            
             GeometryReader { proxy in
                 LinePath(data: data, width: proxy.size.width, height: proxy.size.height, pathPoints: $pathPoints)

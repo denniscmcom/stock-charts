@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct LinePath: Shape {
+public struct LinePath: Shape {
     var data: [Double]
     var (width, height): (CGFloat, CGFloat)
     @Binding var pathPoints: [CGPoint]
     
-    func path(in rect: CGRect) -> Path {
+    public func path(in rect: CGRect) -> Path {
         var path = Path()
         
         let normalizedData = normalize(data)
@@ -38,7 +38,7 @@ struct LinePath: Shape {
     /*
      Get data -> normalize it -> 0 <= output <= 1
      */
-    func normalize(_ data: [Double]) -> [Double] {
+    public func normalize(_ data: [Double]) -> [Double] {
         var normalData = [Double]()
         let min = data.min()!
         let max = data.max()!
