@@ -14,7 +14,7 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "InteractiveCharts",
+            name: "SwiftUIInteractiveCharts",
             targets: ["SwiftUI-InteractiveCharts"]),
     ],
     dependencies: [

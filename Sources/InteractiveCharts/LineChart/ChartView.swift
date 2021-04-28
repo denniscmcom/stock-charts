@@ -12,8 +12,8 @@ public struct ChartView: View {
     var dates: [String]?
     var hours: [String]?
     
-    @State private var showingIndicators = false
-    @State private var indexPosition = Int()
+    @State var showingIndicators = false
+    @State var indexPosition = Int()
     
     public var body: some View {
         VStack {

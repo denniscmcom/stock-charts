@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ChartLabel: View {
+public struct ChartLabel: View {
     var data: [Double]
     var dates: [String]?
     var hours: [String]?
     
     @Binding var indexPosition: Int  // Data point position
     
-    var body: some View {
+    public var body: some View {
         HStack {
             Group {
                 if let dates = self.dates {
@@ -36,7 +36,7 @@ struct ChartLabel: View {
      Take string in format yy-MM-dd (2021-01-01) and transform it
      to long default string format
      */
-    private func formatStringDate(_ stringDate: String) -> String {
+    public func formatStringDate(_ stringDate: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yy-MM-dd"
         let date = dateFormatter.date(from: stringDate)

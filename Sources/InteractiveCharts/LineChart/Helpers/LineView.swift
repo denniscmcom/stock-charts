@@ -14,8 +14,8 @@ public struct LineView: View {
     
     @Binding var showingIndicators: Bool
     @Binding var indexPosition: Int
-    @State private var IndicatorPointPosition: CGPoint = .zero
-    @State private var pathPoints = [CGPoint]()
+    @State var IndicatorPointPosition: CGPoint = .zero
+    @State var pathPoints = [CGPoint]()
     
     public var body: some View {
         ZStack {            
@@ -55,7 +55,7 @@ public struct LineView: View {
     /*
      Color path depending on data.
      */
-    private func colorLine() -> Color {
+    public func colorLine() -> Color {
         var color = Color(.systemGreen)
         
         if data.first! > data.last! {
@@ -73,7 +73,7 @@ public struct LineView: View {
     /*
      When the user drag on Path -> Modifiy indicator point to move it on the path accordingly
      */
-    private func dragGesture(_ longPressLocation: CGPoint) {
+    public func dragGesture(_ longPressLocation: CGPoint) {
         let (closestXPoint, closestYPoint, yPointIndex) = getClosestValueFrom(longPressLocation, inData: pathPoints)
         self.IndicatorPointPosition.x = closestXPoint
         self.IndicatorPointPosition.y = closestYPoint
@@ -85,7 +85,7 @@ public struct LineView: View {
      First, search the closest X point in Path from the tapped location.
      Then, find the correspondent Y point in Path.
      */
-    private func getClosestValueFrom(_ value: CGPoint, inData: [CGPoint]) -> (CGFloat, CGFloat, Int) {
+    public func getClosestValueFrom(_ value: CGPoint, inData: [CGPoint]) -> (CGFloat, CGFloat, Int) {
         let touchPoint: (CGFloat, CGFloat) = (value.x, value.y)
         let xPathPoints = inData.map { $0.x }
         let yPathPoints = inData.map { $0.y }
