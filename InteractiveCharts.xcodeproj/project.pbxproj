@@ -36,6 +36,7 @@
 		95075B462637153E005E0066 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		95075B4A263718C7005E0066 /* IndicatorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
 		95075B4E2637227D005E0066 /* ChartLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLabel.swift; sourceTree = "<group>"; };
+		950EFF0C2639CAB300CE1B7B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		951D9BDF26375E10006B6A6D /* ChartViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewPreview.swift; sourceTree = "<group>"; };
 		951D9BE426375E74006B6A6D /* GenerateSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleData.swift; sourceTree = "<group>"; };
 		951D9BE826376131006B6A6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 		9557882F2636B8D700D1192D = {
 			isa = PBXGroup;
 			children = (
+				950EFF0C2639CAB300CE1B7B /* Package.swift */,
 				9557883B2636B8D800D1192D /* InteractiveCharts */,
 				955788462636B8D800D1192D /* InteractiveChartsTests */,
 				9557883A2636B8D800D1192D /* Products */,
