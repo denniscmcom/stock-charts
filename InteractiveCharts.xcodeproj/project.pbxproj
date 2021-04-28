@@ -87,6 +87,15 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		950EFF0D2639CC4D00CE1B7B /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9557883B2636B8D800D1192D /* InteractiveCharts */,
+				955788462636B8D800D1192D /* InteractiveChartsTests */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		951D9BDE26375DDA006B6A6D /* UI Previews */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				950EFF0C2639CAB300CE1B7B /* Package.swift */,
-				9557883B2636B8D800D1192D /* InteractiveCharts */,
-				955788462636B8D800D1192D /* InteractiveChartsTests */,
+				950EFF0D2639CC4D00CE1B7B /* Sources */,
 				9557883A2636B8D800D1192D /* Products */,
 			);
 			sourceTree = "<group>";
