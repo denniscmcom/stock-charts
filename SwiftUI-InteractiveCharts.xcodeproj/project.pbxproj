@@ -12,11 +12,12 @@
 		95075B472637153E005E0066 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95075B462637153E005E0066 /* ChartView.swift */; };
 		95075B4B263718C7005E0066 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95075B4A263718C7005E0066 /* IndicatorPoint.swift */; };
 		95075B4F2637227D005E0066 /* ChartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95075B4E2637227D005E0066 /* ChartLabel.swift */; };
+		950E86C82639D7AF00509FEA /* InteractiveChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950E86C62639D7AF00509FEA /* InteractiveChartsTests.swift */; };
+		950E86C92639D7AF00509FEA /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 950E86C72639D7AF00509FEA /* Info.plist */; };
 		951D9BE026375E10006B6A6D /* ChartViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D9BDF26375E10006B6A6D /* ChartViewPreview.swift */; };
 		951D9BE526375E74006B6A6D /* GenerateSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D9BE426375E74006B6A6D /* GenerateSampleData.swift */; };
 		951D9BE926376131006B6A6D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 951D9BE826376131006B6A6D /* ContentView.swift */; };
-		955788432636B8D800D1192D /* InteractiveCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955788392636B8D800D1192D /* InteractiveCharts.framework */; };
-		955788482636B8D800D1192D /* InteractiveChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955788472636B8D800D1192D /* InteractiveChartsTests.swift */; };
+		955788432636B8D800D1192D /* SwiftUI_InteractiveCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 955788392636B8D800D1192D /* SwiftUI_InteractiveCharts.framework */; };
 		9557884A2636B8D800D1192D /* InteractiveCharts.h in Headers */ = {isa = PBXBuildFile; fileRef = 9557883C2636B8D800D1192D /* InteractiveCharts.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -36,16 +37,16 @@
 		95075B462637153E005E0066 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		95075B4A263718C7005E0066 /* IndicatorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
 		95075B4E2637227D005E0066 /* ChartLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLabel.swift; sourceTree = "<group>"; };
+		950E86C62639D7AF00509FEA /* InteractiveChartsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveChartsTests.swift; sourceTree = "<group>"; };
+		950E86C72639D7AF00509FEA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		950EFF0C2639CAB300CE1B7B /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		951D9BDF26375E10006B6A6D /* ChartViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewPreview.swift; sourceTree = "<group>"; };
 		951D9BE426375E74006B6A6D /* GenerateSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleData.swift; sourceTree = "<group>"; };
 		951D9BE826376131006B6A6D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		955788392636B8D800D1192D /* InteractiveCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = InteractiveCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		955788392636B8D800D1192D /* SwiftUI_InteractiveCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUI_InteractiveCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9557883C2636B8D800D1192D /* InteractiveCharts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveCharts.h; sourceTree = "<group>"; };
 		9557883D2636B8D800D1192D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		955788422636B8D800D1192D /* InteractiveChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InteractiveChartsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		955788472636B8D800D1192D /* InteractiveChartsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveChartsTests.swift; sourceTree = "<group>"; };
-		955788492636B8D800D1192D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		955788422636B8D800D1192D /* SwiftUI-InteractiveChartsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-InteractiveChartsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				955788432636B8D800D1192D /* InteractiveCharts.framework in Frameworks */,
+				955788432636B8D800D1192D /* SwiftUI_InteractiveCharts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,11 +88,27 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		950E86C42639D7AF00509FEA /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				950E86C52639D7AF00509FEA /* InteractiveChartsTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		950E86C52639D7AF00509FEA /* InteractiveChartsTests */ = {
+			isa = PBXGroup;
+			children = (
+				950E86C62639D7AF00509FEA /* InteractiveChartsTests.swift */,
+				950E86C72639D7AF00509FEA /* Info.plist */,
+			);
+			path = InteractiveChartsTests;
+			sourceTree = "<group>";
+		};
 		950EFF0D2639CC4D00CE1B7B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				9557883B2636B8D800D1192D /* InteractiveCharts */,
-				955788462636B8D800D1192D /* InteractiveChartsTests */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -119,6 +136,7 @@
 			children = (
 				950EFF0C2639CAB300CE1B7B /* Package.swift */,
 				950EFF0D2639CC4D00CE1B7B /* Sources */,
+				950E86C42639D7AF00509FEA /* Tests */,
 				9557883A2636B8D800D1192D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -126,8 +144,8 @@
 		9557883A2636B8D800D1192D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				955788392636B8D800D1192D /* InteractiveCharts.framework */,
-				955788422636B8D800D1192D /* InteractiveChartsTests.xctest */,
+				955788392636B8D800D1192D /* SwiftUI_InteractiveCharts.framework */,
+				955788422636B8D800D1192D /* SwiftUI-InteractiveChartsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,15 +159,6 @@
 				951D9BDE26375DDA006B6A6D /* UI Previews */,
 			);
 			path = InteractiveCharts;
-			sourceTree = "<group>";
-		};
-		955788462636B8D800D1192D /* InteractiveChartsTests */ = {
-			isa = PBXGroup;
-			children = (
-				955788472636B8D800D1192D /* InteractiveChartsTests.swift */,
-				955788492636B8D800D1192D /* Info.plist */,
-			);
-			path = InteractiveChartsTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +175,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		955788382636B8D800D1192D /* InteractiveCharts */ = {
+		955788382636B8D800D1192D /* SwiftUI-InteractiveCharts */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9557884D2636B8D800D1192D /* Build configuration list for PBXNativeTarget "InteractiveCharts" */;
+			buildConfigurationList = 9557884D2636B8D800D1192D /* Build configuration list for PBXNativeTarget "SwiftUI-InteractiveCharts" */;
 			buildPhases = (
 				955788342636B8D800D1192D /* Headers */,
 				955788352636B8D800D1192D /* Sources */,
@@ -179,14 +188,14 @@
 			);
 			dependencies = (
 			);
-			name = InteractiveCharts;
+			name = "SwiftUI-InteractiveCharts";
 			productName = InteractiveCharts;
-			productReference = 955788392636B8D800D1192D /* InteractiveCharts.framework */;
+			productReference = 955788392636B8D800D1192D /* SwiftUI_InteractiveCharts.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		955788412636B8D800D1192D /* InteractiveChartsTests */ = {
+		955788412636B8D800D1192D /* SwiftUI-InteractiveChartsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 955788502636B8D800D1192D /* Build configuration list for PBXNativeTarget "InteractiveChartsTests" */;
+			buildConfigurationList = 955788502636B8D800D1192D /* Build configuration list for PBXNativeTarget "SwiftUI-InteractiveChartsTests" */;
 			buildPhases = (
 				9557883E2636B8D800D1192D /* Sources */,
 				9557883F2636B8D800D1192D /* Frameworks */,
@@ -197,9 +206,9 @@
 			dependencies = (
 				955788452636B8D800D1192D /* PBXTargetDependency */,
 			);
-			name = InteractiveChartsTests;
+			name = "SwiftUI-InteractiveChartsTests";
 			productName = InteractiveChartsTests;
-			productReference = 955788422636B8D800D1192D /* InteractiveChartsTests.xctest */;
+			productReference = 955788422636B8D800D1192D /* SwiftUI-InteractiveChartsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -220,7 +229,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 955788332636B8D800D1192D /* Build configuration list for PBXProject "InteractiveCharts" */;
+			buildConfigurationList = 955788332636B8D800D1192D /* Build configuration list for PBXProject "SwiftUI-InteractiveCharts" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -233,8 +242,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				955788382636B8D800D1192D /* InteractiveCharts */,
-				955788412636B8D800D1192D /* InteractiveChartsTests */,
+				955788382636B8D800D1192D /* SwiftUI-InteractiveCharts */,
+				955788412636B8D800D1192D /* SwiftUI-InteractiveChartsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				950E86C92639D7AF00509FEA /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				955788482636B8D800D1192D /* InteractiveChartsTests.swift in Sources */,
+				950E86C82639D7AF00509FEA /* InteractiveChartsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,7 +295,7 @@
 /* Begin PBXTargetDependency section */
 		955788452636B8D800D1192D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 955788382636B8D800D1192D /* InteractiveCharts */;
+			target = 955788382636B8D800D1192D /* SwiftUI-InteractiveCharts */;
 			targetProxy = 955788442636B8D800D1192D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -425,7 +435,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = InteractiveCharts/Info.plist;
+				INFOPLIST_FILE = Sources/InteractiveCharts/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -454,7 +464,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = InteractiveCharts/Info.plist;
+				INFOPLIST_FILE = Sources/InteractiveCharts/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,7 +488,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTX83R5H8X;
-				INFOPLIST_FILE = InteractiveChartsTests/Info.plist;
+				INFOPLIST_FILE = Tests/InteractiveChartsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -497,7 +507,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTX83R5H8X;
-				INFOPLIST_FILE = InteractiveChartsTests/Info.plist;
+				INFOPLIST_FILE = Tests/InteractiveChartsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -513,7 +523,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		955788332636B8D800D1192D /* Build configuration list for PBXProject "InteractiveCharts" */ = {
+		955788332636B8D800D1192D /* Build configuration list for PBXProject "SwiftUI-InteractiveCharts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9557884B2636B8D800D1192D /* Debug */,
@@ -522,7 +532,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9557884D2636B8D800D1192D /* Build configuration list for PBXNativeTarget "InteractiveCharts" */ = {
+		9557884D2636B8D800D1192D /* Build configuration list for PBXNativeTarget "SwiftUI-InteractiveCharts" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9557884E2636B8D800D1192D /* Debug */,
@@ -531,7 +541,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		955788502636B8D800D1192D /* Build configuration list for PBXNativeTarget "InteractiveChartsTests" */ = {
+		955788502636B8D800D1192D /* Build configuration list for PBXNativeTarget "SwiftUI-InteractiveChartsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				955788512636B8D800D1192D /* Debug */,

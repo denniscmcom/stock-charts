@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ChartView: View {
+public struct ChartView: View {
     var data: [Double]
     var dates: [String]?
     var hours: [String]?
@@ -15,7 +15,7 @@ struct ChartView: View {
     @State private var showingIndicators = false
     @State private var indexPosition = Int()
     
-    var body: some View {
+    public var body: some View {
         VStack {
             ChartLabel(data: data, dates: dates, hours: hours, indexPosition: $indexPosition)
                 .opacity(showingIndicators ? 1: 0)
