@@ -1,9 +1,5 @@
-//
-//  Package.swift
-//  InteractiveCharts
-//
-//  Created by Dennis Concepción Martín on 28/4/21.
-//
+// swift-tools-version:5.0
+// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
