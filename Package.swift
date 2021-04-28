@@ -8,24 +8,24 @@ import PackageDescription
  */
 
 let package = Package(
-    name: "SwiftUICharts",
+    name: "SwiftUI-InteractiveCharts",
     platforms: [
         .iOS(.v14)
     ],
     products: [
         .library(
             name: "InteractiveCharts",
-            targets: ["InteractiveCharts"]),
+            targets: ["SwiftUI-InteractiveCharts"]),
     ],
     dependencies: [
 
     ],
     targets: [
         .target(
-            name: "InteractiveCharts",
+            name: "SwiftUI-InteractiveCharts",
             dependencies: []),
         .testTarget(
-            name: "InteractiveChartsTests",
-            dependencies: ["InteractiveCharts"]),
+            name: "SwiftUI-InteractiveChartsTests",
+            dependencies: ["SwiftUI-InteractiveCharts"]),
     ]
 )
