@@ -6,11 +6,12 @@
 //
 
 import SwiftUI
+import StockCharts
 
 struct ContentView: View {
     var body: some View {
         TabView {
-            ChartViewPreview(data: generateSampleData(350))
+//            ChartViewPreview(data: generateSampleData(350))
                 .tabItem {
                     Label("ChartView", systemImage: "house")
                 }

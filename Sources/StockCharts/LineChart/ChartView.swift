@@ -15,6 +15,12 @@ public struct ChartView: View {
     @State var showingIndicators = false
     @State var indexPosition = Int()
     
+    public init(data: [Double], dates: [String]?, hours: [String]?) {
+        self.data = data
+        self.dates = dates
+        self.hours = hours
+    }
+    
     public var body: some View {
         VStack {
             ChartLabel(data: data, dates: dates, hours: hours, indexPosition: $indexPosition)
