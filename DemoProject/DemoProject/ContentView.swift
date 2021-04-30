@@ -6,15 +6,13 @@
 //
 
 import SwiftUI
-import StockCharts
 
 struct ContentView: View {
     var body: some View {
         TabView {
-//            Text("Hello world")
-//            ChartViewPreview(data: generateSampleData(350))
+            Home(data: generateSampleData(500))
                 .tabItem {
-                    Label("ChartView", systemImage: "house")
+                    Label("Line chart", systemImage: "chart.bar.xaxis")
                 }
         }
     }
