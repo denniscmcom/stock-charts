@@ -1,8 +1,8 @@
 //
 //  ChartLabel.swift
-//  InteractiveCharts
+//  StockCharts
 //
-//  Created by Dennis Concepción Martín on 26/4/21.
+//  Created by Dennis Concepción Martín on 30/4/21.
 //
 
 import SwiftUI

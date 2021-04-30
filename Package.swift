@@ -1,6 +1,5 @@
 // swift-tools-version:5.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
-
 import PackageDescription
 
 /*
@@ -8,24 +7,24 @@ import PackageDescription
  */
 
 let package = Package(
-    name: "SwiftUI-InteractiveCharts",
+    name: "StockCharts",
     platforms: [
         .iOS(.v14)
     ],
     products: [
         .library(
-            name: "SwiftUIInteractiveCharts",
-            targets: ["SwiftUI-InteractiveCharts"]),
+            name: "StockCharts",
+            targets: ["StockCharts"]),
     ],
     dependencies: [
 
     ],
     targets: [
         .target(
-            name: "SwiftUI-InteractiveCharts",
+            name: "StockCharts",
             dependencies: []),
         .testTarget(
-            name: "SwiftUI-InteractiveChartsTests",
-            dependencies: ["SwiftUI-InteractiveCharts"]),
+            name: "StockChartsTests",
+            dependencies: ["StockCharts"]),
     ]
 )

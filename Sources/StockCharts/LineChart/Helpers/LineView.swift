@@ -1,8 +1,8 @@
 //
 //  LineView.swift
-//  InteractiveCharts
+//  StockCharts
 //
-//  Created by Dennis Concepción Martín on 26/4/21.
+//  Created by Dennis Concepción Martín on 30/4/21.
 //
 
 import SwiftUI
@@ -18,7 +18,7 @@ public struct LineView: View {
     @State var pathPoints = [CGPoint]()
     
     public var body: some View {
-        ZStack {            
+        ZStack {
             GeometryReader { proxy in
                 LinePath(data: data, width: proxy.size.width, height: proxy.size.height, pathPoints: $pathPoints)
                     .stroke(colorLine(), lineWidth: 2)

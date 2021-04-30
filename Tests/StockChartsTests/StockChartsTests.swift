@@ -1,14 +1,14 @@
 //
-//  InteractiveChartsTests.swift
-//  InteractiveChartsTests
+//  StockChartsTests.swift
+//  StockChartsTests
 //
-//  Created by Dennis Concepción Martín on 26/4/21.
+//  Created by Dennis Concepción Martín on 30/4/21.
 //
 
 import XCTest
-@testable import InteractiveCharts
+@testable import StockCharts
 
-class InteractiveChartsTests: XCTestCase {
+class StockChartsTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
