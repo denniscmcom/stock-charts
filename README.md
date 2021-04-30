@@ -17,7 +17,9 @@ Swift package for displaying interactive stock charts easily 🎉
 - Copy and paste `https://github.com/denniscm190/StockCharts.git`
 
 ## Usage
-`import StockCharts`
+```swift
+import StockCharts
+```
 
 ### Line chart
 ```swift
