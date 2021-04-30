@@ -13,7 +13,6 @@ struct ContentView: View {
         TabView {
 //            Text("Hello world")
 //            ChartViewPreview(data: generateSampleData(350))
-            
                 .tabItem {
                     Label("ChartView", systemImage: "house")
                 }

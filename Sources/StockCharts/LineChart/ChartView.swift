@@ -23,12 +23,11 @@ public struct ChartView: View {
     
     public var body: some View {
         VStack {
-            Text("Hello")
-//            ChartLabel(data: data, dates: dates, hours: hours, indexPosition: $indexPosition)
-//                .opacity(showingIndicators ? 1: 0)
-//                .padding(.vertical)
+            ChartLabel(data: data, dates: dates, hours: hours, indexPosition: $indexPosition)
+                .opacity(showingIndicators ? 1: 0)
+                .padding(.vertical)
 
-//            LineView(data: data, showingIndicators: $showingIndicators, indexPosition: $indexPosition)
+            LineView(data: data, showingIndicators: $showingIndicators, indexPosition: $indexPosition)
         }
     }
 }
