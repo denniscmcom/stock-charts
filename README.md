@@ -1,7 +1,7 @@
 # SwiftUI Stock Charts 
 Swift package for displaying interactive stock charts easily 🎉
 
-<img src="https://user-images.githubusercontent.com/66180929/116726198-40841380-a9e3-11eb-8e41-ec20027f3076.gif" height="350"/> <img src="https://user-images.githubusercontent.com/66180929/116725323-12ea9a80-a9e2-11eb-8463-21da10aed2ce.png" height="350"/> <img src="https://user-images.githubusercontent.com/66180929/116725319-11b96d80-a9e2-11eb-95f2-63c46c4841f6.png" height="350"/>
+<img src="https://user-images.githubusercontent.com/66180929/116726198-40841380-a9e3-11eb-8e41-ec20027f3076.gif" height="450"/> <img src="https://user-images.githubusercontent.com/66180929/116725323-12ea9a80-a9e2-11eb-8463-21da10aed2ce.png" height="450"/> <img src="https://user-images.githubusercontent.com/66180929/116725319-11b96d80-a9e2-11eb-95f2-63c46c4841f6.png" height="450"/>
 
 ## Features
 - Interactive line chart
