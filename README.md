@@ -1,4 +1,4 @@
-# SwiftUI Interactive Charts 
+# SwiftUI Stock Charts 
 Swift package for displaying interactive stock charts easily 🎉
 
 ## Features
