@@ -12,8 +12,8 @@ public struct ChartView: View {
     public var dates: [String]?
     public var hours: [String]?
     
-    @State var showingIndicators = false
-    @State var indexPosition = Int()
+//    @State var showingIndicators = false
+//    @State var indexPosition = Int()
     
     public init(data: [Double], dates: [String]?, hours: [String]?) {
         self.data = data
