@@ -8,9 +8,9 @@
 import SwiftUI
 
 public struct ChartView: View {
-    var data: [Double]
-    var dates: [String]?
-    var hours: [String]?
+    public var data: [Double]
+    public var dates: [String]?
+    public var hours: [String]?
     
     @State var showingIndicators = false
     @State var indexPosition = Int()

@@ -8,8 +8,9 @@
 import SwiftUI
 
 public struct LinePath: Shape {
-    var data: [Double]
-    var (width, height): (CGFloat, CGFloat)
+    public var data: [Double]
+    public var (width, height): (CGFloat, CGFloat)
+    
     @Binding var pathPoints: [CGPoint]
     
     public func path(in rect: CGRect) -> Path {

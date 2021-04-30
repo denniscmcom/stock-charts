@@ -8,9 +8,9 @@
 import SwiftUI
 
 public struct LineView: View {
-    var data: [Double]
-    var dates: [String]?
-    var hours: [String]?
+    public var data: [Double]
+    public var dates: [String]?
+    public var hours: [String]?
     
     @Binding var showingIndicators: Bool
     @Binding var indexPosition: Int

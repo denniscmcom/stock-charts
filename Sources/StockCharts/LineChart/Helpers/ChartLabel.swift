@@ -8,9 +8,9 @@
 import SwiftUI
 
 public struct ChartLabel: View {
-    var data: [Double]
-    var dates: [String]?
-    var hours: [String]?
+    public var data: [Double]
+    public var dates: [String]?
+    public var hours: [String]?
     
     @Binding var indexPosition: Int  // Data point position
     
