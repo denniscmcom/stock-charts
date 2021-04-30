@@ -24,7 +24,7 @@ struct ContentView: View {
             var lastPrice = prices.last ?? 50.0
             let randomNumber = Double.random(in: 0...0.02)
             
-            if randomNumber < 0.013 {
+            if randomNumber < 0.0145 {
                 lastPrice = lastPrice * (1 - randomNumber)
             } else {
                 lastPrice = lastPrice * (1 + randomNumber)
