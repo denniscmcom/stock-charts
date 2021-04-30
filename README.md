@@ -12,10 +12,10 @@ Swift package for displaying interactive stock charts easily 🎉
 
 ## Instalation
 - In Xcode go to `File` -> `Swift packages` -> `Add package dependency`
-- Copy and paste `https://github.com/denniscm190/SwiftUI-InteractiveCharts.git`
+- Copy and paste `https://github.com/denniscm190/StockCharts.git`
 
 ## Usage
-Import the package in the file you want to use it: `import InteractiveCharts`
+`import StockCharts`
 
 ### Line chart
 ```swift
