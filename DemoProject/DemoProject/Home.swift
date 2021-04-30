@@ -1,14 +1,13 @@
 //
-//  ChartViewPreview.swift
-//  StockCharts
+//  Home.swift
+//  DemoProject
 //
 //  Created by Dennis Concepción Martín on 30/4/21.
 //
 
 import SwiftUI
 
-
-struct ChartViewPreview: View {
+struct Home: View {
     var data: [Double]
     var dates: [String]?
     var hours: [String]?
@@ -50,5 +49,11 @@ struct ChartViewPreview: View {
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
+    }
+}
+
+struct Home_Previews: PreviewProvider {
+    static var previews: some View {
+        Home()
     }
 }

@@ -15,9 +15,6 @@
 		95770BA5263C594C003FA924 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA4263C594C003FA924 /* IndicatorPoint.swift */; };
 		95770BA7263C596E003FA924 /* LinePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA6263C596E003FA924 /* LinePath.swift */; };
 		95770BA9263C5988003FA924 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA8263C5988003FA924 /* LineView.swift */; };
-		95770BAD263C5A13003FA924 /* ChartViewPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BAC263C5A13003FA924 /* ChartViewPreview.swift */; };
-		95770BAF263C5A29003FA924 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BAE263C5A29003FA924 /* ContentView.swift */; };
-		95770BB2263C5A54003FA924 /* GenerateSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BB1263C5A54003FA924 /* GenerateSampleData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,9 +41,6 @@
 		95770BA6263C596E003FA924 /* LinePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePath.swift; sourceTree = "<group>"; };
 		95770BA8263C5988003FA924 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		95770BAA263C59A9003FA924 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		95770BAC263C5A13003FA924 /* ChartViewPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewPreview.swift; sourceTree = "<group>"; };
-		95770BAE263C5A29003FA924 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		95770BB1263C5A54003FA924 /* GenerateSampleData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleData.swift; sourceTree = "<group>"; };
 		95770BB3263C5C2B003FA924 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +71,6 @@
 				95770BB3263C5C2B003FA924 /* LICENSE.md */,
 				95770B9B263C57CA003FA924 /* Sources */,
 				95770B9C263C580C003FA924 /* Tests */,
-				95770BAB263C59F5003FA924 /* Previews */,
 				95770B82263C57B5003FA924 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,24 +137,6 @@
 				95770BA8263C5988003FA924 /* LineView.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		95770BAB263C59F5003FA924 /* Previews */ = {
-			isa = PBXGroup;
-			children = (
-				95770BAE263C5A29003FA924 /* ContentView.swift */,
-				95770BAC263C5A13003FA924 /* ChartViewPreview.swift */,
-				95770BB0263C5A34003FA924 /* Sample data */,
-			);
-			path = Previews;
-			sourceTree = "<group>";
-		};
-		95770BB0263C5A34003FA924 /* Sample data */ = {
-			isa = PBXGroup;
-			children = (
-				95770BB1263C5A54003FA924 /* GenerateSampleData.swift */,
-			);
-			path = "Sample data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,9 +250,6 @@
 			files = (
 				95770BA0263C590C003FA924 /* ChartView.swift in Sources */,
 				95770BA3263C5934003FA924 /* ChartLabel.swift in Sources */,
-				95770BB2263C5A54003FA924 /* GenerateSampleData.swift in Sources */,
-				95770BAF263C5A29003FA924 /* ContentView.swift in Sources */,
-				95770BAD263C5A13003FA924 /* ChartViewPreview.swift in Sources */,
 				95770BA7263C596E003FA924 /* LinePath.swift in Sources */,
 				95770BA9263C5988003FA924 /* LineView.swift in Sources */,
 				95770BA5263C594C003FA924 /* IndicatorPoint.swift in Sources */,
