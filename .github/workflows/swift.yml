@@ -1,4 +1,4 @@
-name: Swift package test
+name: test
 
 # We will trigger this workflow whenever someone pushes or pull request to the repo.
 on:
