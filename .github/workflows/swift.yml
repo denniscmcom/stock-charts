@@ -1,7 +1,11 @@
-name: Unit Test
+name: Swift package test
 
-# We will trigger this workflow whenever someone pushes to the repo.
-on: [push]
+# We will trigger this workflow whenever someone pushes or pull request to the repo.
+on:
+   push:
+     branches: [ main ]
+   pull_request:
+     branches: [ main ]
 
 jobs:
   build:
@@ -15,9 +19,11 @@ jobs:
     # Github Actions' machines do in fact have recent versions of Xcode,
     # but you may have to explicitly switch to them.  We explicitly want
     # to use Xcode 11, so we use xcode-select to switch to it.
+    
     - name: Generate xcodeproj
       run: swift package generate-xcodeproj
     # Finally, we invoke xcodebuild to run the tests on an iPhone 11
     # simulator.
-    - name: Run tests
-      run: xcodebuild test -destination 'name=iPhone 11' -scheme 'StockCharts'
+    
+    - name: Run tests on iPhone 12
+      run: xcodebuild test -destination 'name=iPhone 12' -scheme 'StockCharts'
