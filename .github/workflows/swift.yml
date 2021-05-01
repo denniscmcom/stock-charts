@@ -1,19 +1,28 @@
-name: Swift
+name: Unit Test
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+# We will trigger this workflow whenever someone pushes to the repo.
+on: [push]
 
 jobs:
   build:
 
-    runs-on: macos-latest
+    # We want our unit tests to be run on the latest available version of
+    # macOS that Github Actions supports.
+    runs-on: macOS-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build for iOS
-      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild build-for-testing -scheme StockCharts -destination "platform=iOS Simulator,OS=latest,name=iPhone 12" | xcpretty
-    - name: Run iOS tests
-      run: set -o pipefail && env NSUnbufferedIO=YES xcodebuild test-without-building -scheme StockCharts -destination "platform=iOS Simulator,OS=latest,name=iPhone 12" | xcpretty
+    - uses: actions/checkout@v1
+    # Github Actions' machines do in fact have recent versions of Xcode,
+    # but you may have to explicitly switch to them.  We explicitly want
+    # to use Xcode 11, so we use xcode-select to switch to it.
+    - name: Switch to Xcode 11
+      run: sudo xcode-select --switch /Applications/Xcode_11.1.app
+    # Since we want to be running our tests from Xcode, we need to
+    # generate an .xcodeproj file.  Luckly, Swift Package Manager has
+    # build in functionality to do so.
+    - name: Generate xcodeproj
+      run: swift package generate-xcodeproj
+    # Finally, we invoke xcodebuild to run the tests on an iPhone 11
+    # simulator.
+    - name: Run tests
+      run: xcodebuild test -destination 'name=iPhone 11' -scheme 'StockCharts'
