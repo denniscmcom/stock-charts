@@ -15,11 +15,6 @@ jobs:
     # Github Actions' machines do in fact have recent versions of Xcode,
     # but you may have to explicitly switch to them.  We explicitly want
     # to use Xcode 11, so we use xcode-select to switch to it.
-    - name: Switch to Xcode 11
-      run: sudo xcode-select --switch /Applications/Xcode_11.1.app
-    # Since we want to be running our tests from Xcode, we need to
-    # generate an .xcodeproj file.  Luckly, Swift Package Manager has
-    # build in functionality to do so.
     - name: Generate xcodeproj
       run: swift package generate-xcodeproj
     # Finally, we invoke xcodebuild to run the tests on an iPhone 11
