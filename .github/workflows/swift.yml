@@ -1,19 +1,29 @@
-name: Swift
+name: Swift package test
 
+# We will trigger this workflow whenever someone pushes or pull request to the repo.
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+   push:
+     branches: [ main ]
+   pull_request:
+     branches: [ main ]
 
 jobs:
   build:
 
-    runs-on: macos-latest
+    # We want our unit tests to be run on the latest available version of
+    # macOS that Github Actions supports.
+    runs-on: macOS-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+    - uses: actions/checkout@v1
+    # Github Actions' machines do in fact have recent versions of Xcode,
+    # but you may have to explicitly switch to them.  We explicitly want
+    # to use Xcode 11, so we use xcode-select to switch to it.
+    
+    - name: Generate xcodeproj
+      run: swift package generate-xcodeproj
+    # Finally, we invoke xcodebuild to run the tests on an iPhone 11
+    # simulator.
+    
+    - name: Run tests on iPhone 12
+      run: xcodebuild test -destination 'name=iPhone 12' -scheme 'StockCharts'
