@@ -1,8 +1,4 @@
 ![Build Status](https://github.com/denniscm190/StockCharts/actions/workflows/swift.yml/badge.svg)
-![Platform](https://img.shields.io/cocoapods/p/AFNNetworking)
-![Contributors](https://img.shields.io/github/contributors/denniscm190/StockCharts)
-![Repo size](https://img.shields.io/github/repo-size/denniscm190/StockCharts)
-![License](https://img.shields.io/github/license/denniscm190/StockCharts)
 
 # SwiftUI Stock Charts 
 Swift package for displaying interactive stock charts easily 🎉
