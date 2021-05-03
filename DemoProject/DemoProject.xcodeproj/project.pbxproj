@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,7 +12,6 @@
 		95770BE3263C5F86003FA924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95770BE2263C5F86003FA924 /* Assets.xcassets */; };
 		95770BE6263C5F86003FA924 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95770BE5263C5F86003FA924 /* Preview Assets.xcassets */; };
 		95770BEE263C5FCD003FA924 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BED263C5FCD003FA924 /* Home.swift */; };
-		95770BF1263C6096003FA924 /* StockCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 95770BF0263C6096003FA924 /* StockCharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95770BF1263C6096003FA924 /* StockCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +89,6 @@
 			);
 			name = DemoProject;
 			packageProductDependencies = (
-				95770BF0263C6096003FA924 /* StockCharts */,
 			);
 			productName = DemoProject;
 			productReference = 95770BDB263C5F85003FA924 /* DemoProject.app */;
@@ -121,7 +118,6 @@
 			);
 			mainGroup = 95770BD2263C5F85003FA924;
 			packageReferences = (
-				95770BEF263C6096003FA924 /* XCRemoteSwiftPackageReference "StockCharts" */,
 			);
 			productRefGroup = 95770BDC263C5F85003FA924 /* Products */;
 			projectDirPath = "";
@@ -340,25 +336,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		95770BEF263C6096003FA924 /* XCRemoteSwiftPackageReference "StockCharts" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/denniscm190/StockCharts.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		95770BF0263C6096003FA924 /* StockCharts */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 95770BEF263C6096003FA924 /* XCRemoteSwiftPackageReference "StockCharts" */;
-			productName = StockCharts;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95770BD3263C5F85003FA924 /* Project object */;
 }
