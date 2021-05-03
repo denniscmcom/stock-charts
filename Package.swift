@@ -22,9 +22,11 @@ let package = Package(
     targets: [
         .target(
             name: "StockCharts",
+            exclude: ["DemoProject"],
             dependencies: []),
         .testTarget(
             name: "StockChartsTests",
+            exclude: ["DemoProject"],
             dependencies: ["StockCharts"]),
     ]
 )
