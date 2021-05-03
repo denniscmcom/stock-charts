@@ -35,4 +35,4 @@ data: [120.3, 121.0, 132.4, ...]
 dates: ["yyyy-MM-dd", "2021-01-01", "2021-01-02", ...]
 hours: ["10:20", "10:21", "10:22", ...]  // It could be any format
 ```
-<img width="374" alt="LineChartVideo" src="https://user-images.githubusercontent.com/66180929/116899136-7c171b80-ac37-11eb-9447-fb5e6c5d43a2.gif">
+<img width="374" alt="LineChartVideo" src="https://user-images.githubusercontent.com/66180929/116899623-137c6e80-ac38-11eb-8ec0-e678aea54062.gif">
