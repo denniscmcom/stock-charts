@@ -3,7 +3,8 @@
 # SwiftUI Stock Charts 
 Swift package for displaying interactive stock charts easily 🎉
 
-<img src="https://user-images.githubusercontent.com/66180929/116726198-40841380-a9e3-11eb-8e41-ec20027f3076.gif" height="450"/> <img src="https://user-images.githubusercontent.com/66180929/116725323-12ea9a80-a9e2-11eb-8463-21da10aed2ce.png" height="450"/> <img src="https://user-images.githubusercontent.com/66180929/116725319-11b96d80-a9e2-11eb-95f2-63c46c4841f6.png" height="450"/>
+<img width="374" alt="View1-Screenshot" src="https://user-images.githubusercontent.com/66180929/116898466-b207d000-ac36-11eb-8fb6-0a4f229307db.png">
+
 
 ## Features
 - Interactive line chart
@@ -34,3 +35,4 @@ data: [120.3, 121.0, 132.4, ...]
 dates: ["yyyy-MM-dd", "2021-01-01", "2021-01-02", ...]
 hours: ["10:20", "10:21", "10:22", ...]  // It could be any format
 ```
+<img width="374" alt="LineChartVideo" src="https://user-images.githubusercontent.com/66180929/116899136-7c171b80-ac37-11eb-9447-fb5e6c5d43a2.gif">
