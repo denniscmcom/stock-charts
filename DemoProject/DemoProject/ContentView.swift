@@ -10,9 +10,13 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            Home(data: generateSampleData(500))
+            View1(data: generateSampleData(500))
                 .tabItem {
-                    Label("Line chart", systemImage: "chart.bar.xaxis")
+                    Label("View 1", systemImage: "1.circle")
+                }
+            View2(data: generateSampleData(200))
+                .tabItem {
+                    Label("View 2", systemImage: "2.circle")
                 }
         }
     }

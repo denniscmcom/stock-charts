@@ -1,5 +1,5 @@
 //
-//  Home.swift
+//  View1.swift
 //  DemoProject
 //
 //  Created by Dennis Concepción Martín on 30/4/21.
@@ -8,7 +8,7 @@
 import SwiftUI
 import StockCharts
 
-struct Home: View {
+struct View1: View {
     var data: [Double]
     var dates: [String]?
     var hours: [String]?
@@ -33,6 +33,10 @@ struct Home: View {
                 
                 ChartView(data: data, dates: dates, hours: hours)
                     .padding(.vertical)
+                
+                List(1..<7) { i in
+                    Text("Item \(i)")
+                }
             }
             .navigationTitle("AAPL")
             .toolbar {
