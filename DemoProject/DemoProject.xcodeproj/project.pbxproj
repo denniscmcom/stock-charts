@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9553737B26454C37003BDDEC /* StockCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 9553737A26454C37003BDDEC /* StockCharts */; };
 		95770BDF263C5F85003FA924 /* DemoProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BDE263C5F85003FA924 /* DemoProjectApp.swift */; };
 		95770BE1263C5F85003FA924 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BE0263C5F85003FA924 /* ContentView.swift */; };
 		95770BE3263C5F86003FA924 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95770BE2263C5F86003FA924 /* Assets.xcassets */; };
 		95770BE6263C5F86003FA924 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95770BE5263C5F86003FA924 /* Preview Assets.xcassets */; };
 		95770BEE263C5FCD003FA924 /* View1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BED263C5FCD003FA924 /* View1.swift */; };
-		9584AA90264048AD00626769 /* StockCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 9584AA8F264048AD00626769 /* StockCharts */; };
 		9584AA92264048D700626769 /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9584AA91264048D700626769 /* View2.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,7 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9584AA90264048AD00626769 /* StockCharts in Frameworks */,
+				9553737B26454C37003BDDEC /* StockCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +94,7 @@
 			);
 			name = DemoProject;
 			packageProductDependencies = (
-				9584AA8F264048AD00626769 /* StockCharts */,
+				9553737A26454C37003BDDEC /* StockCharts */,
 			);
 			productName = DemoProject;
 			productReference = 95770BDB263C5F85003FA924 /* DemoProject.app */;
@@ -124,7 +124,7 @@
 			);
 			mainGroup = 95770BD2263C5F85003FA924;
 			packageReferences = (
-				9584AA8E264048AD00626769 /* XCRemoteSwiftPackageReference "StockCharts" */,
+				9553737926454C37003BDDEC /* XCRemoteSwiftPackageReference "StockCharts" */,
 			);
 			productRefGroup = 95770BDC263C5F85003FA924 /* Products */;
 			projectDirPath = "";
@@ -346,20 +346,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9584AA8E264048AD00626769 /* XCRemoteSwiftPackageReference "StockCharts" */ = {
+		9553737926454C37003BDDEC /* XCRemoteSwiftPackageReference "StockCharts" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/denniscm190/StockCharts.git";
 			requirement = {
-				branch = main;
+				branch = denniscm190;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9584AA8F264048AD00626769 /* StockCharts */ = {
+		9553737A26454C37003BDDEC /* StockCharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9584AA8E264048AD00626769 /* XCRemoteSwiftPackageReference "StockCharts" */;
+			package = 9553737926454C37003BDDEC /* XCRemoteSwiftPackageReference "StockCharts" */;
 			productName = StockCharts;
 		};
 /* End XCSwiftPackageProductDependency section */

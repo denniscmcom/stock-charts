@@ -12,6 +12,7 @@ struct View1: View {
     var data: [Double]
     var dates: [String]?
     var hours: [String]?
+    var dragGesture: Bool?
     
     var range = ["5D", "1M", "3M", "1Y", "5Y"]
     @State private var selectedRange = "3M"
@@ -31,7 +32,7 @@ struct View1: View {
                 .pickerStyle(SegmentedPickerStyle())
                 .padding(.horizontal)
                 
-                ChartView(data: data, dates: dates, hours: hours)
+                LineChartView(data: data, dates: dates, hours: hours, dragGesture: dragGesture)
                     .padding(.vertical)
                 
                 List(1..<7) { i in
