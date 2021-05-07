@@ -54,7 +54,7 @@ struct ItemView2: View {
 
                     }
                     .padding(.leading)
-                    ChartView(data: data, dates: nil, hours: nil)
+                    LineChartView(data: data, dates: nil, hours: nil, dragGesture: false)
                         .padding(.bottom)
                         .clipShape(RoundedRectangle(cornerRadius: 15))
                 }
