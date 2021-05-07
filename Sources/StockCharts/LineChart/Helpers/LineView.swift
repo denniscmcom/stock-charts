@@ -11,6 +11,7 @@ public struct LineView: View {
     public var data: [Double]
     public var dates: [String]?
     public var hours: [String]?
+    public var dragGesture: Bool?
     
     @Binding var showingIndicators: Bool
     @Binding var indexPosition: Int
@@ -32,7 +33,7 @@ public struct LineView: View {
         .rotationEffect(.degrees(180), anchor: .center)
         .rotation3DEffect(.degrees(180), axis: (x: 0.0, y: 1.0, z: 0.0))
         .contentShape(Rectangle())  // Control tappable area
-        .gesture(
+        .gesture(dragGesture ?? true ?
             LongPressGesture(minimumDuration: 0.2)
                 .sequenced(before: DragGesture(minimumDistance: 0, coordinateSpace: .local))
                 .onChanged({ value in  // Get value of the gesture
@@ -49,6 +50,7 @@ public struct LineView: View {
                 .onEnded({ value in
                     self.showingIndicators = false
                 })
+            : nil  // On dragGesture = false
         )
     }
     

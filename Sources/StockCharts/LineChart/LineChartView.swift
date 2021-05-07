@@ -1,5 +1,5 @@
 //
-//  ChartView.swift
+//  LineChartView.swift
 //  StockCharts
 //
 //  Created by Dennis Concepción Martín on 30/4/21.
@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-public struct ChartView: View {
+public struct LineChartView: View {
     public var data: [Double]
     public var dates: [String]?
     public var hours: [String]?
+    public var dragGesture: Bool?
     
     @State var showingIndicators = false
     @State var indexPosition = Int()
@@ -27,7 +28,7 @@ public struct ChartView: View {
                 .opacity(showingIndicators ? 1: 0)
                 .padding(.vertical)
 
-            LineView(data: data, showingIndicators: $showingIndicators, indexPosition: $indexPosition)
+            LineView(data: data, dates: dates, hours: hours, dragGesture: dragGesture, showingIndicators: $showingIndicators, indexPosition: $indexPosition)
         }
     }
 }

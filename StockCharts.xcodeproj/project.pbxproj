@@ -10,7 +10,7 @@
 		95770B8B263C57B5003FA924 /* StockCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95770B81263C57B5003FA924 /* StockCharts.framework */; };
 		95770B90263C57B5003FA924 /* StockChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770B8F263C57B5003FA924 /* StockChartsTests.swift */; };
 		95770B92263C57B5003FA924 /* StockCharts.h in Headers */ = {isa = PBXBuildFile; fileRef = 95770B84263C57B5003FA924 /* StockCharts.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		95770BA0263C590C003FA924 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770B9F263C590C003FA924 /* ChartView.swift */; };
+		95770BA0263C590C003FA924 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770B9F263C590C003FA924 /* LineChartView.swift */; };
 		95770BA3263C5934003FA924 /* ChartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA2263C5934003FA924 /* ChartLabel.swift */; };
 		95770BA5263C594C003FA924 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA4263C594C003FA924 /* IndicatorPoint.swift */; };
 		95770BA7263C596E003FA924 /* LinePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA6263C596E003FA924 /* LinePath.swift */; };
@@ -35,7 +35,7 @@
 		95770B8F263C57B5003FA924 /* StockChartsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockChartsTests.swift; sourceTree = "<group>"; };
 		95770B91263C57B5003FA924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		95770B9D263C58B1003FA924 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		95770B9F263C590C003FA924 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		95770B9F263C590C003FA924 /* LineChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartView.swift; sourceTree = "<group>"; };
 		95770BA2263C5934003FA924 /* ChartLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartLabel.swift; sourceTree = "<group>"; };
 		95770BA4263C594C003FA924 /* IndicatorPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorPoint.swift; sourceTree = "<group>"; };
 		95770BA6263C596E003FA924 /* LinePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePath.swift; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		95770B9E263C58F4003FA924 /* LineChart */ = {
 			isa = PBXGroup;
 			children = (
-				95770B9F263C590C003FA924 /* ChartView.swift */,
+				95770B9F263C590C003FA924 /* LineChartView.swift */,
 				95770BA1263C5927003FA924 /* Helpers */,
 			);
 			path = LineChart;
@@ -248,7 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95770BA0263C590C003FA924 /* ChartView.swift in Sources */,
+				95770BA0263C590C003FA924 /* LineChartView.swift in Sources */,
 				95770BA3263C5934003FA924 /* ChartLabel.swift in Sources */,
 				95770BA7263C596E003FA924 /* LinePath.swift in Sources */,
 				95770BA9263C5988003FA924 /* LineView.swift in Sources */,
@@ -414,6 +414,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.dennistech.StockCharts;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -441,6 +442,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = io.dennistech.StockCharts;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
