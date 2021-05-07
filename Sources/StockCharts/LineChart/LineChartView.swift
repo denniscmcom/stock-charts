@@ -16,10 +16,11 @@ public struct LineChartView: View {
     @State var showingIndicators = false
     @State var indexPosition = Int()
     
-    public init(data: [Double], dates: [String]?, hours: [String]?) {
+    public init(data: [Double], dates: [String]?, hours: [String]?, dragGesture: Bool?) {
         self.data = data
         self.dates = dates
         self.hours = hours
+        self.dragGesture = dragGesture
     }
     
     public var body: some View {
