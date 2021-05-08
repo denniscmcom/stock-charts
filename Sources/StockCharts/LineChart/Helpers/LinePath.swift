@@ -30,7 +30,7 @@ public struct LinePath: Shape {
             }
 
             // Append current point to an array. Later will be used for Drag Gesture
-            pathPoints.append(path.currentPoint!)
+//            pathPoints.append(path.currentPoint!)
         }
         
         return path
