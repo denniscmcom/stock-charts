@@ -25,9 +25,11 @@ public struct LineChartView: View {
     
     public var body: some View {
         VStack {
-//            ChartLabel(data: data, dates: dates, hours: hours, indexPosition: $indexPosition)
-//                .opacity(showingIndicators ? 1: 0)
-//                .padding(.vertical)
+            if dragGesture ?? true {
+                ChartLabel(data: data, dates: dates, hours: hours, indexPosition: $indexPosition)
+                    .opacity(showingIndicators ? 1: 0)
+                    .padding(.vertical)
+            }
 
             LineView(data: data, dates: dates, hours: hours, dragGesture: dragGesture, showingIndicators: $showingIndicators, indexPosition: $indexPosition)
         }
