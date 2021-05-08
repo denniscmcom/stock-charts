@@ -34,6 +34,8 @@ public struct LinePath: Shape {
             pathPoints.append(path.currentPoint!)
         }
         
+        self.pathPoints = pathPoints
+        
         return path
     }
     
