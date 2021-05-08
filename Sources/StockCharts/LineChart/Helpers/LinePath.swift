@@ -31,13 +31,15 @@ public struct LinePath: Shape {
             }
 
             // Append current point to an array. Later will be used for Drag Gesture
-            pathPoints.append(path.currentPoint!)
+            DispatchQueue.main.async {
+                pathPoints.append(path.currentPoint!)
+            }
         }
-        
-        self.pathPoints = pathPoints
         
         return path
     }
+    
+//    public func test
     
     /*
      Get data -> normalize it -> 0 <= output <= 1
