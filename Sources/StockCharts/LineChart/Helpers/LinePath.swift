@@ -15,6 +15,7 @@ public struct LinePath: Shape {
     
     public func path(in rect: CGRect) -> Path {
         var path = Path()
+        var pathPoints = [CGPoint]()
         
         let normalizedData = normalize(data)
         let widthBetweenDataPoints = Double(width) / Double(normalizedData.count - 1)  // Remove first point
@@ -31,6 +32,10 @@ public struct LinePath: Shape {
 
             // Append current point to an array. Later will be used for Drag Gesture
             pathPoints.append(path.currentPoint!)
+        }
+        
+        DispatchQueue.main.async {
+            self.pathPoints = pathPoints
         }
         
         return path
