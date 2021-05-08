@@ -69,6 +69,7 @@
 				95770BAA263C59A9003FA924 /* Package.swift */,
 				95770B9D263C58B1003FA924 /* README.md */,
 				95770BB3263C5C2B003FA924 /* LICENSE.md */,
+				95770B85263C57B5003FA924 /* Info.plist */,
 				95770B9B263C57CA003FA924 /* Sources */,
 				95770B9C263C580C003FA924 /* Tests */,
 				95770B82263C57B5003FA924 /* Products */,
@@ -89,7 +90,6 @@
 			children = (
 				95770B9E263C58F4003FA924 /* LineChart */,
 				95770B84263C57B5003FA924 /* StockCharts.h */,
-				95770B85263C57B5003FA924 /* Info.plist */,
 			);
 			path = StockCharts;
 			sourceTree = "<group>";
@@ -407,7 +407,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/StockCharts/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,7 +435,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Sources/StockCharts/Info.plist;
+				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
