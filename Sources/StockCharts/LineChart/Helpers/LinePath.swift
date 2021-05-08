@@ -15,6 +15,7 @@ public struct LinePath: Shape {
     
     public func path(in rect: CGRect) -> Path {
         var path = Path()
+        var pathPoints = [CGPoint]()
         
         let normalizedData = normalize(data)
         let widthBetweenDataPoints = Double(width) / Double(normalizedData.count - 1)  // Remove first point
