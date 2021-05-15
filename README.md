@@ -1,7 +1,7 @@
 ![Build Status](https://github.com/denniscm190/StockCharts/actions/workflows/swift.yml/badge.svg)
 
 # SwiftUI Stock Charts 
-Swift package for displaying interactive stock charts easily 🎉
+Display interactive stock charts easily 🎉
 
 <img width="374" alt="View1-Screenshot" src="https://user-images.githubusercontent.com/66180929/116898466-b207d000-ac36-11eb-8fb6-0a4f229307db.png">
 
