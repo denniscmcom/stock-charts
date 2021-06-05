@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		950857AE266BDF62005357BA /* CapsuleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950857AD266BDF62005357BA /* CapsuleChartView.swift */; };
 		95770B8B263C57B5003FA924 /* StockCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95770B81263C57B5003FA924 /* StockCharts.framework */; };
 		95770B90263C57B5003FA924 /* StockChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770B8F263C57B5003FA924 /* StockChartsTests.swift */; };
 		95770B92263C57B5003FA924 /* StockCharts.h in Headers */ = {isa = PBXBuildFile; fileRef = 95770B84263C57B5003FA924 /* StockCharts.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		950857AD266BDF62005357BA /* CapsuleChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleChartView.swift; sourceTree = "<group>"; };
 		95770B81263C57B5003FA924 /* StockCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StockCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95770B84263C57B5003FA924 /* StockCharts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockCharts.h; sourceTree = "<group>"; };
 		95770B85263C57B5003FA924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		950857AC266BDF48005357BA /* CapsuleChart */ = {
+			isa = PBXGroup;
+			children = (
+				950857AD266BDF62005357BA /* CapsuleChartView.swift */,
+			);
+			path = CapsuleChart;
+			sourceTree = "<group>";
+		};
 		95770B77263C57B5003FA924 = {
 			isa = PBXGroup;
 			children = (
@@ -88,8 +98,9 @@
 		95770B83263C57B5003FA924 /* StockCharts */ = {
 			isa = PBXGroup;
 			children = (
-				95770B9E263C58F4003FA924 /* LineChart */,
 				95770B84263C57B5003FA924 /* StockCharts.h */,
+				95770B9E263C58F4003FA924 /* LineChart */,
+				950857AC266BDF48005357BA /* CapsuleChart */,
 			);
 			path = StockCharts;
 			sourceTree = "<group>";
@@ -251,6 +262,7 @@
 				95770BA0263C590C003FA924 /* LineChartView.swift in Sources */,
 				95770BA3263C5934003FA924 /* ChartLabel.swift in Sources */,
 				95770BA7263C596E003FA924 /* LinePath.swift in Sources */,
+				950857AE266BDF62005357BA /* CapsuleChartView.swift in Sources */,
 				95770BA9263C5988003FA924 /* LineView.swift in Sources */,
 				95770BA5263C594C003FA924 /* IndicatorPoint.swift in Sources */,
 			);
