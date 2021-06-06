@@ -60,13 +60,12 @@ public struct LineView: View {
     public func colorLine() -> Color {
         var color = Color(.systemGreen)
         
-        if data.first! > data.last! {
+        if showingIndicators {
+            color = Color(.systemBlue)
+        } else if data.first! > data.last! {
             color = Color(.systemRed)
         } else if data.first! == data.last! {
             color = Color(.systemTeal)
-        }
-        else if showingIndicators {
-            color = Color(.systemBlue)
         }
         
         return color
