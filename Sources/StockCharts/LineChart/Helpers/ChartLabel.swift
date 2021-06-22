@@ -28,7 +28,7 @@ public struct ChartLabel: View {
                 Text("\(data[indexPosition], specifier: "%.2f")")
                     .foregroundColor(Color(.systemBlue))
             }
-            .font(.callout)
+            .font(.caption)
         }
     }
     
