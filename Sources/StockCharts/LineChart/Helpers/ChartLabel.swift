@@ -20,10 +20,12 @@ public struct ChartLabel: View {
                 if let dates = self.dates {
                     let date = formatStringDate(dates[indexPosition])
                     Text(date)
+                        .opacity(0.5)
                 }
                 if let hours = self.hours {
                     let hour = hours[indexPosition]
                     Text(hour)
+                        .opacity(0.5)
                 }
                 Text("\(data[indexPosition], specifier: "%.2f")")
                     .foregroundColor(Color(.systemBlue))
