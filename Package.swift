@@ -9,7 +9,7 @@ import PackageDescription
 let package = Package(
     name: "StockCharts",
     platforms: [
-        .iOS(.v14)
+        .iOS(.v14), .watchOS(.v7)
     ],
     products: [
         .library(
