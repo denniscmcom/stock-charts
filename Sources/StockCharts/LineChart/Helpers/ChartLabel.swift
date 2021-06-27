@@ -27,8 +27,16 @@ public struct ChartLabel: View {
                     Text(hour)
                         .opacity(0.5)
                 }
+                
+                #if os(iOS)
                 Text("\(data[indexPosition], specifier: "%.2f")")
                     .foregroundColor(Color(.systemBlue))
+                
+                #elseif os(watchOS)
+                Text("\(data[indexPosition], specifier: "%.2f")")
+                    .foregroundColor(Color(.blue))
+                #endif
+                
             }
             .font(.caption)
         }

@@ -17,6 +17,7 @@ public struct CapsuleChartView: View {
         ZStack {
             GeometryReader { proxy in
                 Group {
+                    #if os(iOS)
                     Capsule()
                         .foregroundColor(Color(.systemGray))
                         .opacity(0.2)
@@ -24,6 +25,16 @@ public struct CapsuleChartView: View {
                     Capsule()
                         .foregroundColor(Color(.systemBlue))
                         .frame(width: proxy.size.width * percentageOfWidth)
+                    #elseif os(watchOS)
+                    Capsule()
+                        .foregroundColor(Color(.gray))
+                        .opacity(0.2)
+                    
+                    Capsule()
+                        .foregroundColor(Color(.blue))
+                        .frame(width: proxy.size.width * percentageOfWidth)
+                    #endif
+                    
                 }
                 .frame(height: 10)
             }
