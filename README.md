@@ -46,7 +46,7 @@ struct ContentView: View {
         RoundedRectangle(cornerRadius: 25)
             .frame(width: 400, height: 120)
             .foregroundColor(.white)
-            .shadow(color: Color(.gray).opacity(0.15), radius: 10)
+            .shadow(color: Color(,.gray).opacity(0.15), radius: 10)
             .overlay(
                 VStack(alignment: .leading) {
                     Text("Dennis Concepcion")
