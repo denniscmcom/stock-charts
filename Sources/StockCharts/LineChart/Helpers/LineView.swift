@@ -58,26 +58,14 @@ public struct LineView: View {
      Color path depending on data.
      */
     public func colorLine() -> Color {
-        #if os(iOS)
-        let blue = Color(.systemBlue)
-        let teal = Color(.systemTeal)
-        let red = Color(.systemRed)
-        
-        var color = Color(.systemGreen)
-        #elseif os(watchOS)
-        let blue = Color(.blue)
-        let teal = Color(.blue)
-        let red = Color(.red)
-        
-        var color = Color(.green)
-        #endif
+        var color = Color.green
         
         if showingIndicators {
-            color = blue
+            color = Color.blue
         } else if data.first! > data.last! {
-            color = red
+            color = Color.red
         } else if data.first! == data.last! {
-            color = teal
+            color = Color.blue
         }
         
         return color
