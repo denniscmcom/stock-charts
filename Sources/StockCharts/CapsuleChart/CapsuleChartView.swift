@@ -18,7 +18,7 @@ public struct CapsuleChartView: View {
     
     public var body: some View {
         GeometryReader { proxy in
-            ZStack {
+            ZStack(alignment: .leading) {
                 Group {
                     Capsule()
                         .foregroundColor(Color.gray)
