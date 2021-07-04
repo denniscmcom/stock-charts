@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		950857AE266BDF62005357BA /* CapsuleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950857AD266BDF62005357BA /* CapsuleChartView.swift */; };
+		954AA39E269209770006FD14 /* LineChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AA39D269209770006FD14 /* LineChartStyle.swift */; };
+		954AA3A026920D060006FD14 /* CapsuleChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AA39F26920D060006FD14 /* CapsuleChartStyle.swift */; };
 		95770B8B263C57B5003FA924 /* StockCharts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95770B81263C57B5003FA924 /* StockCharts.framework */; };
 		95770B90263C57B5003FA924 /* StockChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770B8F263C57B5003FA924 /* StockChartsTests.swift */; };
 		95770B92263C57B5003FA924 /* StockCharts.h in Headers */ = {isa = PBXBuildFile; fileRef = 95770B84263C57B5003FA924 /* StockCharts.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		950857AD266BDF62005357BA /* CapsuleChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleChartView.swift; sourceTree = "<group>"; };
+		954AA39D269209770006FD14 /* LineChartStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartStyle.swift; sourceTree = "<group>"; };
+		954AA39F26920D060006FD14 /* CapsuleChartStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleChartStyle.swift; sourceTree = "<group>"; };
 		95770B81263C57B5003FA924 /* StockCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StockCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95770B84263C57B5003FA924 /* StockCharts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockCharts.h; sourceTree = "<group>"; };
 		95770B85263C57B5003FA924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				950857AD266BDF62005357BA /* CapsuleChartView.swift */,
+				954AA39F26920D060006FD14 /* CapsuleChartStyle.swift */,
 			);
 			path = CapsuleChart;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				95770B9F263C590C003FA924 /* LineChartView.swift */,
+				954AA39D269209770006FD14 /* LineChartStyle.swift */,
 				95770BA1263C5927003FA924 /* Helpers */,
 			);
 			path = LineChart;
@@ -261,10 +267,12 @@
 			files = (
 				95770BA0263C590C003FA924 /* LineChartView.swift in Sources */,
 				95770BA3263C5934003FA924 /* ChartLabel.swift in Sources */,
+				954AA3A026920D060006FD14 /* CapsuleChartStyle.swift in Sources */,
 				95770BA7263C596E003FA924 /* LinePath.swift in Sources */,
 				950857AE266BDF62005357BA /* CapsuleChartView.swift in Sources */,
 				95770BA9263C5988003FA924 /* LineView.swift in Sources */,
 				95770BA5263C594C003FA924 /* IndicatorPoint.swift in Sources */,
+				954AA39E269209770006FD14 /* LineChartStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
