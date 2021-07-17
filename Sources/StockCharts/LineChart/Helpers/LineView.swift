@@ -12,6 +12,7 @@ public struct LineView: View {
     public var dates: [String]?
     public var hours: [String]?
     public var dragGesture: Bool?
+    public var style: LineChartStyle
     
     @Binding var showingIndicators: Bool
     @Binding var indexPosition: Int
@@ -26,7 +27,7 @@ public struct LineView: View {
             }
             
             if showingIndicators {
-                IndicatorPoint()
+                IndicatorPoint(style: style)
                     .position(x: IndicatorPointPosition.x, y: IndicatorPointPosition.y)
             }
         }
@@ -58,14 +59,14 @@ public struct LineView: View {
      Color path depending on data.
      */
     public func colorLine() -> Color {
-        var color = Color.green
+        var color = style.uptrendLineColor
         
         if showingIndicators {
-            color = Color.blue
+            color = style.showingIndicatorLineColor
         } else if data.first! > data.last! {
-            color = Color.red
+            color = style.downtrendLineColor
         } else if data.first! == data.last! {
-            color = Color.blue
+            color = style.flatTrendLineColor
         }
         
         return color

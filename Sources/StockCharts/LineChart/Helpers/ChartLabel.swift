@@ -11,6 +11,7 @@ public struct ChartLabel: View {
     public var data: [Double]
     public var dates: [String]?
     public var hours: [String]?
+    public var style: LineChartStyle
     
     @Binding var indexPosition: Int  // Data point position
     
@@ -29,7 +30,7 @@ public struct ChartLabel: View {
                 }
                 
                 Text("\(data[indexPosition], specifier: "%.2f")")
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(style.labelColor)
                 
             }
             .font(.caption)

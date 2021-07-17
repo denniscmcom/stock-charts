@@ -9,20 +9,23 @@ import SwiftUI
 
 public struct CapsuleChartView: View {
     public var percentageOfWidth: CGFloat
+    public var style: CapsuleChartStyle
     
-    public init(percentageOfWidth: CGFloat) {
+    public init(percentageOfWidth: CGFloat, style: CapsuleChartStyle) {
         self.percentageOfWidth = percentageOfWidth
+        self.style = style
     }
+    
     public var body: some View {
-        ZStack {
-            GeometryReader { proxy in
+        GeometryReader { proxy in
+            ZStack(alignment: .leading) {
                 Group {
                     Capsule()
                         .foregroundColor(Color.gray)
                         .opacity(0.2)
                     
                     Capsule()
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(style.capsuleColor)
                         .frame(width: proxy.size.width * percentageOfWidth)
                 }
                 .frame(height: 10)
