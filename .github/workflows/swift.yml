@@ -2,8 +2,6 @@ name: test
 
 # We will trigger this workflow whenever someone pushes or pull request to the repo.
 on:
-   push:
-     branches: [ main ]
    pull_request:
      branches: [ main ]
 
