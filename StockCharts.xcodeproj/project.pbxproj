@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		950857AE266BDF62005357BA /* CapsuleChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 950857AD266BDF62005357BA /* CapsuleChartView.swift */; };
-		954AA39E269209770006FD14 /* LineChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AA39D269209770006FD14 /* LineChartStyle.swift */; };
 		954AA3A026920D060006FD14 /* CapsuleChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AA39F26920D060006FD14 /* CapsuleChartStyle.swift */; };
 		954CEBEB26BBEEEB00B6E989 /* StockChartsWatchOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954CEBE226BBEEEB00B6E989 /* StockChartsWatchOS.framework */; };
 		954CEBF026BBEEEB00B6E989 /* StockChartsWatchOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954CEBEF26BBEEEB00B6E989 /* StockChartsWatchOSTests.swift */; };
 		954CEBF226BBEEEB00B6E989 /* StockChartsWatchOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 954CEBE426BBEEEB00B6E989 /* StockChartsWatchOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		954CEBF926BBEF3100B6E989 /* LineChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770B9F263C590C003FA924 /* LineChartView.swift */; };
-		954CEBFA26BBEF3400B6E989 /* LineChartStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 954AA39D269209770006FD14 /* LineChartStyle.swift */; };
 		954CEBFB26BBEF3800B6E989 /* ChartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA2263C5934003FA924 /* ChartLabel.swift */; };
 		954CEBFC26BBEF3B00B6E989 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA4263C594C003FA924 /* IndicatorPoint.swift */; };
 		954CEBFD26BBEF3E00B6E989 /* LinePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA6263C596E003FA924 /* LinePath.swift */; };
@@ -29,6 +27,8 @@
 		95770BA5263C594C003FA924 /* IndicatorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA4263C594C003FA924 /* IndicatorPoint.swift */; };
 		95770BA7263C596E003FA924 /* LinePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA6263C596E003FA924 /* LinePath.swift */; };
 		95770BA9263C5988003FA924 /* LineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95770BA8263C5988003FA924 /* LineView.swift */; };
+		958E4D3226BC3776003177DD /* LineChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E4D3126BC3776003177DD /* LineChartController.swift */; };
+		958E4D3326BC3776003177DD /* LineChartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958E4D3126BC3776003177DD /* LineChartController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,6 @@
 
 /* Begin PBXFileReference section */
 		950857AD266BDF62005357BA /* CapsuleChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleChartView.swift; sourceTree = "<group>"; };
-		954AA39D269209770006FD14 /* LineChartStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartStyle.swift; sourceTree = "<group>"; };
 		954AA39F26920D060006FD14 /* CapsuleChartStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleChartStyle.swift; sourceTree = "<group>"; };
 		954CEBE226BBEEEB00B6E989 /* StockChartsWatchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StockChartsWatchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		954CEBE426BBEEEB00B6E989 /* StockChartsWatchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StockChartsWatchOS.h; sourceTree = "<group>"; };
@@ -70,6 +69,7 @@
 		95770BA6263C596E003FA924 /* LinePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinePath.swift; sourceTree = "<group>"; };
 		95770BA8263C5988003FA924 /* LineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineView.swift; sourceTree = "<group>"; };
 		95770BAA263C59A9003FA924 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		958E4D3126BC3776003177DD /* LineChartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,9 +139,6 @@
 				95770BAA263C59A9003FA924 /* Package.swift */,
 				95770B85263C57B5003FA924 /* Info.plist */,
 				95770B9B263C57CA003FA924 /* Sources */,
-				95770B9C263C580C003FA924 /* Tests */,
-				954CEBE326BBEEEB00B6E989 /* StockChartsWatchOS */,
-				954CEBEE26BBEEEB00B6E989 /* StockChartsWatchOSTests */,
 				95770B82263C57B5003FA924 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -180,23 +177,18 @@
 			isa = PBXGroup;
 			children = (
 				95770B83263C57B5003FA924 /* StockCharts */,
+				95770B8E263C57B5003FA924 /* StockChartsTests */,
+				954CEBE326BBEEEB00B6E989 /* StockChartsWatchOS */,
+				954CEBEE26BBEEEB00B6E989 /* StockChartsWatchOSTests */,
 			);
 			path = Sources;
-			sourceTree = "<group>";
-		};
-		95770B9C263C580C003FA924 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				95770B8E263C57B5003FA924 /* StockChartsTests */,
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		95770B9E263C58F4003FA924 /* LineChart */ = {
 			isa = PBXGroup;
 			children = (
 				95770B9F263C590C003FA924 /* LineChartView.swift */,
-				954AA39D269209770006FD14 /* LineChartStyle.swift */,
+				958E4D3126BC3776003177DD /* LineChartController.swift */,
 				95770BA1263C5927003FA924 /* Helpers */,
 			);
 			path = LineChart;
@@ -388,10 +380,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				954CEBFA26BBEF3400B6E989 /* LineChartStyle.swift in Sources */,
 				954CEBFD26BBEF3E00B6E989 /* LinePath.swift in Sources */,
 				954CEC0026BBEF4A00B6E989 /* CapsuleChartStyle.swift in Sources */,
 				954CEBFE26BBEF4200B6E989 /* LineView.swift in Sources */,
+				958E4D3326BC3776003177DD /* LineChartController.swift in Sources */,
 				954CEBF926BBEF3100B6E989 /* LineChartView.swift in Sources */,
 				954CEBFC26BBEF3B00B6E989 /* IndicatorPoint.swift in Sources */,
 				954CEBFB26BBEF3800B6E989 /* ChartLabel.swift in Sources */,
@@ -415,10 +407,10 @@
 				95770BA3263C5934003FA924 /* ChartLabel.swift in Sources */,
 				954AA3A026920D060006FD14 /* CapsuleChartStyle.swift in Sources */,
 				95770BA7263C596E003FA924 /* LinePath.swift in Sources */,
+				958E4D3226BC3776003177DD /* LineChartController.swift in Sources */,
 				950857AE266BDF62005357BA /* CapsuleChartView.swift in Sources */,
 				95770BA9263C5988003FA924 /* LineView.swift in Sources */,
 				95770BA5263C594C003FA924 /* IndicatorPoint.swift in Sources */,
-				954AA39E269209770006FD14 /* LineChartStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,7 +448,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = StockChartsWatchOS/Info.plist;
+				INFOPLIST_FILE = Sources/StockChartsWatchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -483,7 +475,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = StockChartsWatchOS/Info.plist;
+				INFOPLIST_FILE = Sources/StockChartsWatchOS/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -506,7 +498,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTX83R5H8X;
-				INFOPLIST_FILE = StockChartsWatchOSTests/Info.plist;
+				INFOPLIST_FILE = Sources/StockChartsWatchOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,7 +519,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MTX83R5H8X;
-				INFOPLIST_FILE = StockChartsWatchOSTests/Info.plist;
+				INFOPLIST_FILE = Sources/StockChartsWatchOSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
