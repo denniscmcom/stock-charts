@@ -8,32 +8,30 @@
 import SwiftUI
 
 public struct LineChartView: View {
-    public var data: [Double]
-    public var dates: [String]?
-    public var hours: [String]?
-    public var dragGesture: Bool?
-    public var style: LineChartStyle
+    public var lineChartController: LineChartController
     
     @State var showingIndicators = false
     @State var indexPosition = Int()
     
-    public init(data: [Double], dates: [String]?, hours: [String]?, dragGesture: Bool?, style: LineChartStyle) {
-        self.data = data
-        self.dates = dates
-        self.hours = hours
-        self.dragGesture = dragGesture
-        self.style = style
+    public init(lineChartController: LineChartController) {
+        self.lineChartController = lineChartController
     }
     
     public var body: some View {
-        if !data.isEmpty {
+        if lineChartController.prices.isEmpty {
+            
+        } else {
             VStack {
-                if dragGesture ?? true {
-                    ChartLabel(data: data, dates: dates, hours: hours, style: style, indexPosition: $indexPosition)
+                if lineChartController.dragGesture {
+                    ChartLabel(lineChartController: lineChartController, indexPosition: $indexPosition)
                         .opacity(showingIndicators ? 1: 0)
                 }
-
-                LineView(data: data, dates: dates, hours: hours, dragGesture: dragGesture, style: style, showingIndicators: $showingIndicators, indexPosition: $indexPosition)
+                
+                LineView(
+                    lineChartController: lineChartController,
+                    showingIndicators: $showingIndicators,
+                    indexPosition: $indexPosition
+                )
             }
         }
     }

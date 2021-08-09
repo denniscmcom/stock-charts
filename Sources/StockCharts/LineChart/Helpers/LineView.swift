@@ -8,11 +8,7 @@
 import SwiftUI
 
 public struct LineView: View {
-    public var data: [Double]
-    public var dates: [String]?
-    public var hours: [String]?
-    public var dragGesture: Bool?
-    public var style: LineChartStyle
+    public var lineChartController: LineChartController
     
     @Binding var showingIndicators: Bool
     @Binding var indexPosition: Int
@@ -22,19 +18,19 @@ public struct LineView: View {
     public var body: some View {
         ZStack {
             GeometryReader { proxy in
-                LinePath(data: data, width: proxy.size.width, height: proxy.size.height, pathPoints: $pathPoints)
+                LinePath(data: lineChartController.prices, width: proxy.size.width, height: proxy.size.height, pathPoints: $pathPoints)
                     .stroke(colorLine(), lineWidth: 2)
             }
             
             if showingIndicators {
-                IndicatorPoint(style: style)
+                IndicatorPoint(lineChartController: lineChartController)
                     .position(x: IndicatorPointPosition.x, y: IndicatorPointPosition.y)
             }
         }
         .rotationEffect(.degrees(180), anchor: .center)
         .rotation3DEffect(.degrees(180), axis: (x: 0.0, y: 1.0, z: 0.0))
         .contentShape(Rectangle())  // Control tappable area
-        .gesture(dragGesture ?? true ?
+        .gesture(lineChartController.dragGesture ?
             LongPressGesture(minimumDuration: 0.2)
                 .sequenced(before: DragGesture(minimumDistance: 0, coordinateSpace: .local))
                 .onChanged({ value in  // Get value of the gesture
@@ -59,14 +55,14 @@ public struct LineView: View {
      Color path depending on data.
      */
     public func colorLine() -> Color {
-        var color = style.uptrendLineColor
+        var color = lineChartController.uptrendLineColor
         
         if showingIndicators {
-            color = style.showingIndicatorLineColor
-        } else if data.first! > data.last! {
-            color = style.downtrendLineColor
-        } else if data.first! == data.last! {
-            color = style.flatTrendLineColor
+            color = lineChartController.showingIndicatorLineColor
+        } else if lineChartController.prices.first! > lineChartController.prices.last! {
+            color = lineChartController.downtrendLineColor
+        } else if lineChartController.prices.first! == lineChartController.prices.last! {
+            color = lineChartController.flatTrendLineColor
         }
         
         return color

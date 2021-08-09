@@ -9,11 +9,11 @@ import SwiftUI
 
 public struct CapsuleChartView: View {
     public var percentageOfWidth: CGFloat
-    public var style: CapsuleChartStyle
+    public var capsuleChartStyle: CapsuleChartStyle
     
     public init(percentageOfWidth: CGFloat, style: CapsuleChartStyle) {
         self.percentageOfWidth = percentageOfWidth
-        self.style = style
+        self.capsuleChartStyle = style
     }
     
     public var body: some View {
@@ -25,7 +25,7 @@ public struct CapsuleChartView: View {
                         .opacity(0.2)
                     
                     Capsule()
-                        .foregroundColor(style.capsuleColor)
+                        .foregroundColor(capsuleChartStyle.capsuleColor)
                         .frame(width: proxy.size.width * percentageOfWidth)
                 }
                 .frame(height: 10)

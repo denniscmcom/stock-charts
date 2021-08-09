@@ -8,32 +8,26 @@
 import SwiftUI
 
 public struct ChartLabel: View {
-    public var data: [Double]
-    public var dates: [String]?
-    public var hours: [String]?
-    public var style: LineChartStyle
+    public var lineChartController: LineChartController
     
     @Binding var indexPosition: Int  // Data point position
     
     public var body: some View {
         HStack {
-            Group {
-                if let dates = self.dates {
-                    let date = formatStringDate(dates[indexPosition])
-                    Text(date)
-                        .opacity(0.5)
-                }
-                if let hours = self.hours {
-                    let hour = hours[indexPosition]
-                    Text(hour)
-                        .opacity(0.5)
-                }
-                
-                Text("\(data[indexPosition], specifier: "%.2f")")
-                    .foregroundColor(style.labelColor)
-                
+            if let dates = lineChartController.dates {
+                let date = formatStringDate(dates[indexPosition])
+                Text(date)
+                    .opacity(0.5)
             }
-            .font(.caption)
+            
+            if let hours = lineChartController.hours {
+                let hour = hours[indexPosition]
+                Text(hour)
+                    .opacity(0.5)
+            }
+            
+            Text("\(lineChartController.prices[indexPosition], specifier: "%.2f")")
+                .foregroundColor(lineChartController.labelColor)
         }
     }
     
