@@ -27,8 +27,8 @@ You can customise the line chart with `LineChartController`
 ```swift
 LineChartController(
     prices: [Double],
-    dates: [String],
-    hours: [String],
+    dates: [String]?, // format: yy-MM-dd
+    hours: [String]?, // has to correspond to dates
     labelColor: Color,
     indicatorPointColor: Color,
     showingIndicatorLineColor: Color,
@@ -68,16 +68,16 @@ struct ContentView: View {
         RoundedRectangle(cornerRadius: 25)
             .frame(width: 400, height: 120)
             .foregroundColor(.white)
-            .shadow(color: Color(,.gray).opacity(0.15), radius: 10)
+            .shadow(color: Color(.gray).opacity(0.15), radius: 10)
             .overlay(
                 VStack(alignment: .leading) {
                     Text("Dennis Concepcion")
                         .font(.title3)
                         .fontWeight(.semibold)
-
+                    
                     Text("Random guy")
                     
-                    CapsuleChartView(percentageOfWidth: 0.6)
+                    CapsuleChartView(percentageOfWidth: 0.6, style: CapsuleChartStyle(capsuleColor: Color.blue))
                         .padding(.top)
                 }
                 .padding()
