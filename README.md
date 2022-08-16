@@ -2,6 +2,8 @@
 
 # SwiftUI Stock Charts 
 ![Build Status](https://github.com/denniscm190/StockCharts/actions/workflows/swift.yml/badge.svg)   
+**This package is deprecated, please see [Swift Charts](https://developer.apple.com/documentation/charts)**   
+
 Display interactive stock charts easily 🎉
 
 ## Instalation
